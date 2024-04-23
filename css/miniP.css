@@ -1,0 +1,131 @@
+
+/*----------------------------------------------------------------*/
+/*전체 검색창 박스영역 */
+fieldset {
+	margin-top:50px;
+	margin-left:100px;
+	border-radius:23px;
+	border-color:black;
+	height:200px;
+	width:1000px;
+}
+fieldset h1{/*표제*/
+	color : white;
+}
+#search1{/*여행지 선택*/
+    color: white;
+    font-family: "Comic Sans Ms";
+    width : 170px;
+    height :55px;
+    float : left;
+    margin-left: 10px;
+    border : 2px solid #a1a1a1;
+    background : #c6cfff94;
+    border-radius: 10px;
+    font-size : 17px;
+}	
+#search{/*search div*/
+    width : 100%;
+    height: 400px;
+    background-image: url(../img/Main2.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+    border-radius: 20px;
+}
+.sear2{/*날짜 선택*/
+	margin-left: 30px;
+	width:300px;
+	float:left;
+	height: 55px;
+	}
+.search{/*검색바*/
+	float : left;
+    margin-left: auto;
+    margin-right: auto;
+    border : 2px solid #a1a1a1;
+    border-radius: 5px;
+    color : white;
+    width : 250px;
+    height: 55px;
+    background: #c6cfff94 ;
+    font-family: "Comic Sans Ms";
+    font-size : 17px;
+}
+.searchB{/*검색버튼*/
+	float : left;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "Comic Sans Ms";
+    width : 150px;
+    height :55px;
+    margin-left: 15px;
+    border : 2px solid #a1a1a1;
+    background : #c6cfff94;
+    border-radius: 10px;
+    font-size : 17px;
+}
+	.hotelRe, .planeRe, .naraRe{
+        height: 300px;
+        margin:130px auto;
+    }
+	.hotelRe a , .planeRe a, .naraRe  a , .planeFoRe a, .hotelFoRe a{
+	text-decoration : none;
+	color : rgb(131, 133, 255);
+	}
+	h2{/*호텔, 항공 추천목록*/
+	font-size:30px;
+	text-align:left;
+	margin-left:30px;
+	color : rgb(131, 133, 255);
+	}
+    .frame{
+        height: 280px;
+
+    }
+.con1{/*호텔, 항공 사진목록*/
+	margin-left:15px;
+    padding : 10px;
+	float : left;
+    width: 200px;
+    height: 200px;
+    border-radius :23px;
+ 
+	}
+    .butFrame{
+        width: 190px;
+        height: 50px;
+        margin: auto;
+    }
+    .befNex{
+        margin-left: 5px;
+        float: left;
+        width: 80px;
+        height: 30px;
+        border: 1px solid rgb(131, 133, 255);
+        border-radius: 5px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .befNex:hover{
+        color : white;
+        font-weight: 700;
+        background-color: rgb(174, 175, 252);
+    }
+    .con1 a{
+        display: block;
+        width: 100%; height: 100%;
+        border-radius :23px;
+        overflow: hidden; /* 자손이 현재 요소보다 클때 안보이게 처리 */
+      }
+    .con1 img{
+        width: 200px;
+        height: 200px;
+        transition: 0.3s; 
+    }
+    .con1 a:hover img, .com1 a:focus img{/*이미지에 마우스 올려놨을때*/
+        transform: scale(1.2);
+	}

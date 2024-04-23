@@ -1,0 +1,296 @@
+#wrapper{
+    margin :  auto;
+    padding : 0px;
+    width : 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Comic Sans Ms";
+}
+input, select{
+    cursor: pointer;
+}
+#header{/*로고, 메뉴바, 로그인 영역을 감싸는 영역*/
+    margin :  auto;
+    
+    width: 1200px;
+    height: 100px;
+}
+.image-thumbnail { /*메인로고 css*/
+    width:100%;
+    height:200%;
+    object-fit:cover;
+    border-radius: 100% ;
+}
+.name{/*홈페이지 이미지 영역 div*/
+    width : 160px;
+    height : 50px;
+    float : left;
+    line-height: 40px;
+}
+.menubar{/*메뉴바 영역 div*/
+    width : 740px;
+    height : 50px;
+    float : left;
+    margin-top : 15px;
+    margin-bottom : 15px;
+    margin-right : 10px;
+    margin-left : 10px;
+    padding  : 5px;
+    text-align: center;
+    line-height: 40px;
+}
+.logP{ /*로그인 영역 div*/
+    position: relative;
+    width : 220px;
+    height : 50px;
+    float : right;
+    margin: 23px auto;
+    padding  : 5px;
+    line-height: 40px;
+}
+.login{/*로그인 페이지로 가는 div*/
+    float: left;
+    width : 120px;
+    height : 40px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding : 6px,7px;
+    margin : 0;
+} 
+.create{/*회원 가입 페이지로 가는 div*/
+    float: left;
+    width : 100px;
+    height : 40px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding : 6px,7px;
+    margin : 0;
+}
+#crea{
+    display: none;
+    color : rgb(131, 133, 255);
+    background-color: white;
+    font-family : "굴림";
+    font-weight : bold;
+    font-size : 0.9em;
+    border: 0px;
+    width : 100px;
+    height : 40px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding : 6px,7px;
+    margin : 0;
+    cursor: pointer;
+}
+#crea:hover{
+    background : #a4b1fd;
+    color : white;
+    border-radius : 10px;
+    text-align: center;
+}
+a.line{/*로그인, 회원가입 글씨 설정*/
+    display : block;
+    font-family : "굴림";
+    font-weight : bold;
+    font-size : 0.9em;
+    text-align: center;
+    padding : 10px 20px;
+    color : rgb(131, 133, 255);
+    text-decoration : none;
+    margin : 0;
+}
+.logP a:hover{
+    background : #a4b1fd;
+    color : white;
+    border-radius : 10px;
+    text-align: center;
+}
+#nav{
+    list-style-type :  none;
+    height : 50px;
+    padding : 6px,7px;
+    margin : 0;
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: center;
+ }  
+    
+#nav li{
+     width: 145px;
+    float : left;
+    height : 50px;
+    position : relative;
+    margin : 7px 15px 15px 15px;
+    padding : 0px;
+    text-align: center;
+ }
+ #nav li a{
+    display : block;
+    font-family : "굴림";
+    font-weight : bold;
+    font-size : 1em;
+    text-align: center;
+    padding : 10px 20px;
+    color:rgb(131, 133, 255);
+    text-decoration : none;
+    margin : 0;
+ }
+#nav li:hover > a{
+     background : #a4b1fd;
+     color : white;
+     border-radius : 10px;
+     text-align: center;
+ }
+ #nav ul{
+    width: 145px;
+    margin : 0px;
+    padding : 0px;
+    list-style : none;
+    position : absolute;
+    left : 0;
+    top : 45px;
+    width : 150px;
+   
+    border-radius : 8px;
+    text-align: center;
+    visibility : hidden;
+ } 
+ #nav ul li{
+    width: 145px;
+    float : none;
+    margin : 0;
+    padding : 0;
+    height : 35px;
+    text-align: center;
+    line-height: 20px;
+    }
+    
+    #nav li:hover ul{
+    visibility : visible;
+    width: 145px;
+}
+    
+    #nav ul a{
+    font-weight : bold;
+    color : white;
+    text-align: center;
+
+    }
+    
+    #nav ul li:hover > a{
+    background : #7489fd;
+    color : white;
+    border-radius :0;
+    text-align: center;
+
+    }
+    
+    #nav ul li:first-child > a{
+    border-top-left-radius : 8px;
+    border-top-right-radius : 8px;
+    text-align: center;
+    }
+    
+    #nav ul li:last-child > a{
+    border-bottom-left-radius : 8px;
+    border-bottom-right-radius : 8px;
+    text-align: center;
+    }
+    #main{/*메인영역*/
+        margin :  auto;
+        width: 1200px;
+    }
+    
+    #footer{
+        margin: auto;
+        position: relative;
+        float: left;
+        width : 100%;
+        height : 200px;
+        background : rgba(131, 133, 255, 0.199);
+        }
+        /*-------------------------------------------------------------------------------------------------------------------------*/
+        #CustCenter{
+            text-align: left;
+            position: absolute;
+            top : 5%;
+            left : 5%;
+            width : 200px;
+            font-size: 17px;
+            font-weight: 700;
+            color : #424242;
+        }
+        #CustCenter > div{
+            margin-top: 15px;
+            font-size: 12px;
+            font-weight: 700;
+            color : #949292;
+        }
+        /*-------------------------------------------------------------------------------------------------------------------------*/
+        #info{
+            text-align: left;
+            font-size : 10px;
+            position: absolute;
+            top : 60%;
+            left : 5%;
+            color : #949292;
+        }
+        /*-------------------------------------------------------------------------------------------------------------------------*/
+        #Company{
+            position: absolute;
+            top : 5%;
+            left : 70%;
+            width : 100px;
+            font-size: 17px;
+            font-weight: 700;
+            color : #424242;
+        }
+        
+        #Company > div{
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: 700;
+            color : #949292;
+        }
+        /*-------------------------------------------------------------------------------------------------------------------------*/
+        #Service{
+            position: absolute;
+            top : 5%;
+            left : 80%;
+            width : 150px;
+            font-size: 17px;
+            font-weight: 700;
+            color : #424242;
+        }
+        #Service > div{
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: 700;
+            color : #949292;
+        }
+        /*-------------------------------------------------------------------------------------------------------------------------*/
+        #terms{
+            width : 500px;
+            position: absolute;
+            top : 90%;
+            left : 4%;
+            font-size: 13px;
+            color : #949292;
+        }
+        #terms > div{
+            float: left;
+            margin-left: 15px;
+        }
+        /*-------------------------------------------------------------------------------------------------------------------------*/
+        a{
+            text-decoration: none;
+            color : #949292;
+        }
+        a:hover{
+            color : #363636;
+        }
+        input::placeholder {/*플레이스홀더 색상*/
+            color: white;
+            font-style: italic;
+            font-family: "Comic Sans Ms";
+        }    

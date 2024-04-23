@@ -1,0 +1,327 @@
+#search{/*백그라운드 이미지 설정 영역*/
+    width : 100%;
+    height: 150px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.topblank{/*서치바를 밑으로 내리기 위한 div 영역*/
+   width: 1200px; 
+   height: 50px;
+}
+.searchArea{/*검색바가 들어가 있는 영역*/
+    margin: 0 auto;
+    width: 1200px; 
+    height: 230px;
+ }
+.search{/*검색바*/
+    margin-left: auto;
+    margin-right: auto;
+    border : 2px solid #a1a1a1;
+    border-radius: 5px;
+    color : white;
+    width : 25%;
+    height: 45px;
+    background: #c6cfff94 ;
+    font-family: "Comic Sans Ms";
+    font-size : 17px;
+}
+.text{/*planeLi 에서 입국일 출국일텍스트를 표시하는 div*/
+    margin-top: 20px;
+    width: 135px;
+    height : 20px;
+    float: right;
+    text-align: center;
+    margin-left : 60px;
+    color : white;
+    font-weight: 700;
+}
+.person{/*인원수체크영역*/
+    margin-left: auto;
+    margin-right: auto;
+    border : 2px solid #a1a1a1;
+    border-radius: 5px;
+    color : white;
+    width : 3%;
+    height: 45px;
+    background: #c6cfff94 ;
+    font-family: "Comic Sans Ms";
+    font-size : 17px;
+}
+.date{/*날짜선택박스*/
+    margin-left: auto;
+    margin-right: auto;
+    border : 2px solid #a1a1a1;
+    border-radius: 5px;
+    color : white;
+    width : 15%;
+    height: 45px;
+    background: #c6cfff94 ;
+    font-family: "Comic Sans Ms";
+    font-size : 17px;
+}
+span{
+    color:white;
+}
+.searchB{/*검색버튼*/
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "Comic Sans Ms";
+    width : 120px;
+    height :45px;
+    margin-left: 15px;
+    border : 2px solid #a1a1a1;
+    background : #c6cfff94;
+    border-radius: 10px;
+    font-size : 17px;
+}
+.Select{/*선택 박스 영역*/
+    border: 1px solid rgb(131, 133, 255);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    width: 200px;
+    height : 850px;
+    float :left;
+    text-align: left;
+    padding-left: 15px;
+    color : rgb(131, 133, 255);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+.HotelList{/*호텔리스트 출력 영역*/
+    margin-top: 20px;
+    width: 480px;
+    height : 850px;
+    float :left;
+    margin-bottom: 70px;
+}
+
+.HotelMap{/*호텔지도 출력 영역*/
+    margin-top: 20px;
+    width: 480px;
+    height : 850px;
+    float :left;
+    color : rgb(131, 133, 255);
+    text-align :left;
+    font-weight: 700;
+}
+.HotelMap > div{
+    border: 1px solid rgb(131, 133, 255);
+    border-radius: 10px;
+    padding : 5px;
+    margin : 0  0 10px 10px;
+    position: relative;
+    height: 150px;
+} 
+.HotelList > div{
+    border: 1px solid rgb(131, 133, 255);
+    border-radius: 10px;
+    padding : 5px;
+    margin : 0  10px 10px 0;
+    position: relative;
+    height: 150px;
+}
+.HotelList > div > img{
+    position: absolute;
+    top: 50%;
+    left : 15%;
+    transform: translate(-50%, -50%);
+}
+.HotelList > div > div{/*호텔 리스트의 호텔별 div*/
+    position: absolute;
+    top: 50%;
+    left : 30%;
+}
+.HotelList > div > div.name{/*호텔 리스트의 상호 div*/
+    position: absolute;
+    top: 0%;
+    left : 30%;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    width : 300px;
+    text-align: left;
+    color : rgb(131, 133, 255);
+}
+.HotelList > div > div.info{/*호텔 리스트의 상호 div*/
+    position: absolute;
+    top: 25%;
+    left : 30%;
+    width:260px;
+    height: 70px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    color : rgb(131, 133, 255);
+}
+
+.HotelList > div > div.score{/*호텔 리스트의 평점 div*/
+    position: absolute;
+    top: 65%;
+    left : 78%;
+    width : 100px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color : rgb(131, 133, 255);
+}
+
+.HotelList > div > div.price{/*호텔 리스트의 가격 div*/
+    position: absolute;
+    top: 80%;
+    left : 70%;
+    width : 140px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color : rgb(131, 133, 255);
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+.PlaneList{/*항공리스트 출력 영역*/
+    margin-top: 20px;
+    width: 970px;
+    height : 850px;
+    float :left;
+    margin-bottom: 70px;
+}
+.PlaneList > div{
+    border: 1px solid rgb(131, 133, 255);
+    border-radius: 20px;
+    padding : 5px;
+    margin : 5px;
+    position: relative;
+    height: 150px;
+}
+ .PlaneList > div > img{
+    position: absolute;
+    top: 50%;
+    left : 15%;
+    transform: translate(-50%, -50%);
+}
+.PlaneList > div > div{/*호텔 리스트의 호텔별 div*/
+    position: absolute;
+    top: 50%;
+    left : 30%;
+}
+.PlaneList > div > div.name{/*호텔 리스트의 상호 div*/
+    position: absolute;
+    top: 0%;
+    left : 30%;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    width : 300px;
+    text-align: left;
+    color : rgb(131, 133, 255);
+}
+.PlaneList > div > div.info{/*호텔 리스트의 상호 div*/
+    position: absolute;
+    top: 35%;
+    left : 30%;
+    width:500px;
+    height: 70px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    color : rgb(131, 133, 255);
+}
+
+.PlaneList > div > div.info > div.time{/*호텔 리스트의 상호 div*/
+    position: absolute;
+    color : rgb(131, 133, 255);
+    top: 0%;
+    left : 30%;
+    width:260px;
+    height: 25px;
+}
+
+.PlaneList > div > div.score{/*호텔 리스트의 평점 div*/
+    position: absolute;
+    top: 65%;
+    left : 78%;
+    width : 100px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color : rgb(131, 133, 255);
+}
+
+.PlaneList > div > div.price{/*호텔 리스트의 가격 div*/
+    position: absolute;
+    top: 80%;
+    left : 73%;
+    width : 150px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color : rgb(131, 133, 255);
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+.Select input[type=radio]{/*라디오버튼*/
+    display: none;
+}
+.Select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid rgb(131, 133, 255);
+    border-radius: 5px;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+.Select input[type=radio]+label{
+    background-color: #fff;
+    color : rgb(131, 133, 255);
+}
+.Select input[type=radio]:checked+label{
+    background-color: rgb(131, 133, 255);
+    color : white;
+}
+input[type=range]{
+    accent-color: rgb(131, 133, 255);
+}
+.Select input[type=submit]{
+    width: 95px;
+    height: 30px;
+    background-color: #fff;
+    color : rgb(65, 68, 253);
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}
+
+.Select input[type=submit]:hover{
+    width: 95px;
+    height: 30px;
+    background-color: rgb(65, 68, 253);
+    color : #fff;
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}
+.Select input[type=reset]{
+    width: 95px;
+    height: 30px;
+    background-color: #fff;
+    color :rgb(65, 68, 253);
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}
+.Select input[type=reset]:hover{
+    width: 95px;
+    height: 30px;
+    background-color: rgb(65, 68, 253);
+    color : #fff;
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}

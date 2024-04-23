@@ -1,0 +1,199 @@
+.Select{/*선택 박스 영역*/
+    width: 202px;
+    height : 850px;
+    float :left;
+    text-align: left;
+    padding-left: 15px;
+    color : rgb(131, 133, 255);
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+.Select input[type=radio]{/*라디오버튼*/
+    display: none;
+}
+.Select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid rgb(131, 133, 255);
+    border-radius: 5px;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+.Select input[type=radio]+label{
+    background-color: #fff;
+    color : rgb(131, 133, 255);
+}
+.Select input[type=radio]:checked+label{
+    background-color: rgb(131, 133, 255);
+    color : white;
+}
+input[type=range]{
+    accent-color: rgb(131, 133, 255);
+}
+.Select input[type=submit]{
+    width: 95px;
+    height: 30px;
+    background-color: #fff;
+    color : rgb(65, 68, 253);
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}
+
+.Select input[type=submit]:hover{
+    width: 95px;
+    height: 30px;
+    background-color: rgb(65, 68, 253);
+    color : #fff;
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}
+.Select input[type=reset]{
+    width: 95px;
+    height: 30px;
+    background-color: #fff;
+    color :rgb(65, 68, 253);
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}
+.Select input[type=reset]:hover{
+    width: 95px;
+    height: 30px;
+    background-color: rgb(65, 68, 253);
+    color : #fff;
+    border: 1px solid rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+}
+
+.Select a{
+    width: 120px;
+    height: 30px;
+    color :rgb(65, 68, 253);
+    border-radius: 5px;
+    font-weight:700;
+    text-decoration: none;
+}
+#full{
+    margin: auto;
+    width : 1200px;
+}
+.Cbutton{
+    border : 1px solid black;
+    width: 300px;
+    float: left;
+}
+ .frame{
+    text-align: left;
+    width: 900px;
+    float: left
+}
+.service{
+   
+    th{
+        text-align: center;
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #8b8b8b;
+    }
+
+    td{
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+hr{
+    border-color:rgb(131, 133, 255);
+}
+/*마이페이지 CSS*/
+.mypage{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+.mypage  div{
+    margin: 0 auto;
+}
+.mypage  div >p{/*내정보 글씨*/
+    color: rgb(65, 68, 253);
+    font-size: 25px;
+}
+.replace{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #797979;
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    width: 180px;
+    margin-top: 21px;
+  }
+table{
+    text-align: left;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 800px;
+    border:2px solid rgb(131, 133, 255);
+    border-radius: 10px;
+}
+.firstRow{
+    border-right: 4px solid whitesmoke;
+}
+td{
+    border-bottom: 4px solid whitesmoke;
+    padding: 20px;
+}
+.buttonReplace{
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(131, 133, 255);
+    border:1px solid rgb(65, 68, 253);
+    border-radius: 10px;
+}
+input::placeholder {/*플레이스홀더 색상*/
+    color: gray;
+    font-style: italic;
+    font-family: "Comic Sans Ms";
+} 
+#mail_Select{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #797979;
+    border: none;
+    border: 1px solid #cfcfcf;
+    width: 130px;
+    margin-top: 21px;
+  }
+.hadan{
+    margin: 0 auto;
+    width: 500px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    height: 106px;
+    border-top: 1px solid #e6e6e6;
+  }
+  .button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 55px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #0068ff;
+    background: #ffffff;
+    border: 1px solid #0068ff;
+    border-radius: 10px;
+  }

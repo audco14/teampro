@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+ <head>
+  <meta charset="UTF-8">
+  <title>항공리스트</title>
+  <link rel = "stylesheet" href="./../css/common.css">
+  <link rel = "stylesheet" href="../css/PlaneHotel.css">
+  <script src="./../js/common.js"></script>
+ </head>
+ 
+<body onload="logChk02()">
+    <form action ="#">
+        <script>
+            let resultElement =document.getElementById('result');
+        
+            let number = resultElement.innerText;
+        
+            function count(type){
+                if(type=='plus'){
+                    number = parseInt(number)+1;
+                }else if(type =='minus'){
+                    number = parseInt(number)-1;
+                }
+            }
+        </script>
+ <div id = "wrapper">
+
+    <header id ="header">     
+        <div class="name"><a  href ="./../index.html"><img src ="./../img/MainLogo3.png" class = "image-thumbnail"></a></div>
+        <div class ="menubar">
+            <ul id="nav">
+                <li><a href="./hotel.html">호텔 예약</a></li>
+				<li><a href="./plane.html">항공 예약</a></li>
+				<li><a href="./reco.html">오늘의 추천</a></li>   
+				<li><a href="./service.html">고객센터</a></li>
+            </ul>
+    </div>
+
+    <div class ="logP">
+        <div class ="login"><a href ="./log.html" id ="log" class= "line">로그인</a></div>
+        <div class="create"><input type ="button" id ="crea" value="로그아웃" onclick="outChk02()"></div>
+    </div>
+    </header>
+    <!--========공통 상단바 html 코드=========-->
+
+    <main id="main">
+        <section class = "imgSearch">
+                <div id ="search">
+                    <div class="text">출국일</div>
+                    <div class="text">입국일</div>
+                    <div  class="topblank"></div><!--지워야함 다른페이지에 쓸려면-->
+                    <div class = "searchArea">
+                    <input type ="text" placeholder="여행지를 검색해보세요!" class ="search">
+                    <span>인원을 선택하세요!</span>
+                    <input type ="button" class="person" value="-" onclick="count('minus')">
+                    <span id="result">1</span>
+                    <input type ="button" class="person" value="+" onclick="count('plus')">
+                    <input type ="date" class ="date">
+                    <input type ="date" class ="date">
+                    <input type ="submit" value="검색" class="searchB">
+                    </div>
+                </div>
+        </section>
+    
+        <section class = "Select">
+            <form action="#">
+            <h4>지도에서 보기</h4>
+            <a href="https://www.google.co.kr/maps/"><img src = "../img/map.png"></a>
+
+            <h4>목적지</h4>
+            <input type="radio" id="select" name="country"><label for="select">국내</label>
+            <input type="radio" id="select2" name="country"><label for="select2">해외</label>
+
+            <h4>항공사</h4>
+            <input type="radio" id="select3" name="KoreanAir"><label for="select3">대한항공</label>
+            <input type="radio" id="select4" name="Asiana"><label for="select4">아시아나</label>
+            <input type="radio" id="select5" name="AirSeoul"><label for="select5">에어서울</label>
+            <input type="radio" id="select6" name="AirBusasn"><label for="select6">에어부산</label>
+            <input type="radio" id="select7" name="Emirates"><label for="select7">에미레이츠</label>
+            <input type="radio" id="select8" name="PeachPlane"><label for="select8">피치항공</label>
+
+            <h4>좌석 등급</h4>
+            <input type="radio" id="select9" name="economy"><label for="select9">이코노미</label>
+            <input type="radio" id="select10" name="buisness"><label for="select10">비즈니스</label>
+            <input type="radio" id="select11" name="first"><label for="select11">퍼스트</label>
+            <input type="radio" id="select12" name="seatAll"><label for="select12">전체</label>
+
+            <h4>평점순 찾기</h4>
+            <input type="radio" id="select15" name="under1"><label for="select15">1점 이하</label>
+            <input type="radio" id="select16" name="1bet2"><label for="select16">1점-2점</label>
+            <input type="radio" id="select17" name="2bet3"><label for="select17">2점~3점</label>
+            <input type="radio" id="select18" name="3bet4"><label for="select18">3점~4점</label>
+            <input type="radio" id="select19" name="4bet5"><label for="select19">4점~5점</label>
+            <input type="radio" id="select20" name="all"><label for="select20">전체</label>
+            <h4>금액대별 검색</h4>
+            <input type="range" id="input-left" min="50,000" max="100,000,000" value="1">
+            <br><br>
+
+            <input type="submit" value="검색">
+            <input type="reset" value="초기화">
+        </form>
+        </section>
+
+        <section class = "PlaneList">
+            <div>
+                <img src = "../img/japan.webp" width = "250px" height="150px">
+                <div class="name">인천ICN - 오사카KIX</div>
+                <div class="info">
+                피치항공<br><br>
+                <div class="time">
+                    15:05 ICN - 17:30 KIX  직항, 02시간 25분
+                    <br><br>15:00 KIX - 17:50 ICN  직항, 02시간 50분
+                </div>
+                에어서울
+                </div>
+                <div class="score">평점 ★4.8/5</div>
+                <div class="price"><a><b>왕복 ￦215,590~</b></a></div>
+            
+            </div>
+
+            <div>
+                <img src = "../img/danang.webp" width = "250px" height="150px">
+                <div class="name">인천ICN - 다낭DAD</div>
+                <div class="info">
+                대한항공<br><br>
+                <div class="time">
+                    22:45 ICN - 01:25 DAD  직항, 04시간 40분
+                    <br><br>23:45 DAD - 06:00 ICN  직항, 04시간 15분
+                </div>
+                에어부산
+                </div>
+                <div class="score">평점 ★3.5/5</div>
+                <div class="price"><a><b>왕복 ￦346,236~</b></a></div>
+            
+            </div>
+
+            <div>
+                <img src = "../img/paris.jpg" width = "250px" height="150px">
+                <div class="name">인천ICN - 파리CDG</div>
+                <div class="info">
+                아시아나,대한항공<br><br>
+                <div class="time">
+                    10:25 ICN - 22:30 CDG  경유 19시간 05분
+                    <br><br>16:10 CDG - 17:25 ICN  경유, 18시간 15분
+                </div>
+                에미레이츠,아시아나
+                </div>
+                <div class="score">평점 ★4.8/5</div>
+                <div class="price"><a><b>왕복 ￦1,701,400~</b></a></div>
+            
+            </div>
+            <div>
+                <img src = "../img/taipei.jpg" width = "250px" height="150px">
+                <div class="name">인천ICN - 타이페이TPE</div>
+                <div class="info">
+                에어서울<br><br>
+                <div class="time">
+                    07:50 ICN - 09:25 TPE  직항, 02시간 35분
+                    <br><br>11:50 TPE - 15:15 ICN  직항, 02시간 25분
+                </div>
+                에어부산
+                </div>
+                <div class="score">평점 ★4.1/5</div>
+                <div class="price"><a><b>왕복 ￦343,740~</b></a></div>
+            
+            </div>
+            <div>
+                <img src = "../img/busan.jpg" width = "250px" height="150px">
+                <div class="name">김포GMP - 부산PUS</div>
+                <div class="info">
+                에어부산<br><br>
+                <div class="time">
+                    09:00 GMP - 10:05 PUS  직항, 01시간 05분
+                </div>
+                
+                </div>
+                <div class="score">평점 ★2.8/5</div>
+                <div class="price"><a><b>편도 ￦83,100~</b></a></div>
+
+            </div>
+           
+        </section>
+    </main>
+
+
+    <footer id="footer">
+        <div id ="CustCenter">
+            고객센터<br>
+           <div> 오전9시부터 오후 3시까지</div>
+        </div>
+
+        <div id="Company">
+        회사
+        <div><a href ="#">회사 소개</a></div>
+         </div>
+
+         <div id="Service">
+        서비스
+        <div><a href="#">공지사항</a></div>        
+        <div><a href="#">자주 묻는 질문</a></div>        
+        </div>
+
+        <div id="info">
+            (주)여행을떠나요<br>
+            주소 : 서울특별시 노원구 초안산로 12길 인덕대학교 | 대표이사 : 홍윤기, 김민중, 곽명채 | <br>
+            전자주소 : audco14@naver.com<br>
+            (주)여행을떠나요는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 
+            관련한 의무와 책임은 각 판매자에게 있습니다.
+        </div>
+
+        <div id ="terms">
+        <div><a href ="#">이용약관</a></div>
+        <div><a href ="#">개인정보처리방침</a></div>     
+      </div>   
+    </footer>
+    
+</div>
+</form>
+
+</body>
+
+</html>

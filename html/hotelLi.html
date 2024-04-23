@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+ <head>
+  <meta charset="UTF-8">
+  <title>호텔리스트</title>
+  <link rel = "stylesheet" href="./../css/common.css">
+  <link rel = "stylesheet" href="../css/PlaneHotel.css">
+  <script src="./../js/common.js"></script>
+ </head>
+ 
+<body onload="logChk02()">
+    <form action ="#">
+        <script>
+            let resultElement =document.getElementById('result');
+        
+            let number = resultElement.innerText;
+        
+            function count(type){
+                if(type=='plus'){
+                    number = parseInt(number)+1;
+                }else if(type =='minus'){
+                    number = parseInt(number)-1;
+                }
+            }
+        </script>
+ <div id = "wrapper">
+
+    <header id ="header">     
+        <div class="name"><a  href ="./../index.html"><img src ="./../img/MainLogo3.png" class = "image-thumbnail"></a></div>
+        <div class ="menubar">
+            <ul id="nav">
+                <li><a href="./hotel.html">호텔 예약</a></li>
+				<li><a href="./plane.html">항공 예약</a></li>
+				<li><a href="./reco.html">오늘의 추천</a></li>   
+				<li><a href="./service.html">고객센터</a></li>
+            </ul>
+    </div>
+
+    <div class ="logP">
+        <div class ="login"><a href ="./log.html" id ="log" class= "line">로그인</a></div>
+        <div class="create"><input type ="button" id ="crea" value="로그아웃" onclick="logOut02()"></div>
+    </div>
+    </header>
+    <!--========공통 상단바 html 코드=========-->
+
+    <main id="main">
+        <section class = "imgSearch">
+                <div id ="search">
+                    <div  class="topblank"></div><!--지워야함 다른페이지에 쓸려면-->
+                    <div class = "searchArea">
+                    <input type ="text" placeholder="여행지를 검색해보세요!" class ="search">
+                    <span>인원을 선택하세요!</span>
+                    <input type ="button" class="person" value="-" onclick="count('minus')">
+                    <span id="result">1</span>
+                    <input type ="button" class="person" value="+" onclick="count('plus')">
+
+                    <input type ="date" class ="date">
+                    <input type ="submit" value="검색" class="searchB">
+                    </div>
+                </div>
+        </section>
+    
+        <section class = "Select">
+            <form action="#">
+            <h4>지도에서 보기</h4>
+            <a href="https://www.google.co.kr/maps/"><img src = "../img/map.png"></a>
+
+            <h4>목적지</h4>
+            <input type="radio" id="select" name="country"><label for="select">국내</label>
+            <input type="radio" id="select2" name="country"><label for="select2">해외</label>
+
+            <h4>숙소 유형</h4>
+            <input type="radio" id="select3" name="hotel"><label for="select3">호텔</label>
+            <input type="radio" id="select4" name="motel"><label for="select4">모텔</label>
+            <input type="radio" id="select5" name="risort"><label for="select5">리조트</label>
+            <input type="radio" id="select6" name="guestH"><label for="select6">게스트하우스</label>
+            <input type="radio" id="select7" name="condo"><label for="select7">콘도</label>
+            <input type="radio" id="select8" name="camp"><label for="select8">캠핑/글램핑</label>
+
+            <h4>숙소 등급</h4>
+            <input type="radio" id="select9" name="1star"><label for="select9">1성급</label>
+            <input type="radio" id="select10" name="2star"><label for="select10">2성급</label>
+            <input type="radio" id="select11" name="3star"><label for="select11">3성급</label>
+            <input type="radio" id="select12" name="4star"><label for="select12">4성급</label>
+            <input type="radio" id="select13" name="5star"><label for="select13">5성급</label>
+            <input type="radio" id="select14" name="etc"><label for="select14">그 외</label>
+
+            <h4>평점순 찾기</h4>
+            <input type="radio" id="select15" name="under1"><label for="select15">1점 이하</label>
+            <input type="radio" id="select16" name="1bet2"><label for="select16">1점-2점</label>
+            <input type="radio" id="select17" name="2bet3"><label for="select17">2점~3점</label>
+            <input type="radio" id="select18" name="3bet4"><label for="select18">3점~4점</label>
+            <input type="radio" id="select19" name="4bet5"><label for="select19">4점~5점</label>
+            <input type="radio" id="select20" name="all"><label for="select20">전체</label>
+
+            <h4>금액대별 검색</h4>
+            <input type="range" id="input-left" min="50,000" max="100,000,000" value="1">
+            <br><br>
+
+            <input type="submit" value="검색">
+            <input type="reset" value="초기화">
+        </form>
+        </section>
+
+        <section class = "HotelList">
+            <div>
+                <img src = "../img/hotel1.jpg" width = "120px" height="150px">
+                <div class="name">롯데호텔 시그니엘</div>
+                <div class="info">
+                잠실역, 송파구, 서울 위치<br>
+                석촌호수가 근처에 있는 서울뷰 최고 호텔
+                </div>
+                <div class="score">평점 ★4.8/5</div>
+                <div class="price"><a>가격 : <b>￦856,860</b></a></div>
+            
+            </div>
+
+            <div>
+                <img src = "../img/hotel2.jpg" width = "120px" height="150px">
+                <div class="name">그랜드 머큐어 앰배서더 호텔</div>
+                <div class="info">
+                용산역, 용산구, 서울 위치<br>
+                서울의 중심 용산구에 위치한 5성급 호텔
+                </div>
+                <div class="score">평점 ★4.3/5</div>
+                <div class="price"><a>가격 : <b>￦400,530</b></a></div>
+            
+            </div>
+
+            <div>
+                <img src = "../img/hotel3.jpg" width = "120px" height="150px">
+                <div class="name">페어몬트 앰배서더 서울</div>
+                <div class="info">
+                여의나루역, 영등포구, 서울 위치<br>
+                지하철역이 가까운 영등포구 5성급 호텔
+                </div>
+                <div class="score">평점 ★4.4/5</div>
+                <div class="price"><a>가격 : <b>￦545,159</b></a></div>
+            
+            </div>
+
+            <div>
+                <img src = "../img/hotel4.jpg" width = "120px" height="150px">
+                <div class="name">레스케이프 호텔</div>
+                <div class="info">
+                다운타운, 중구구, 서울 위치<br>
+                분위기가 좋은 건물이 예쁜 호텔
+                </div>
+                <div class="score">평점 ★4.5/5</div>
+                <div class="price"><a>가격 : <b>￦269,960</b></a></div>
+            
+            </div>
+
+            <div>
+                <img src = "../img/hotel5.jpg" width = "120px" height="150px">
+                <div class="name">반얀 트리 클럽 & 스파 서울</div>
+                <div class="info">
+                다운타운, 중구, 서울 위치<br>
+                넓은 스파를 서울 한복판에서 즐길수있는 호텔
+                </div>
+                <div class="score">평점 ★3.9/5</div>
+                <div class="price"><a>가격 : <b>￦863,464</b></a></div>
+            
+            </div>
+           
+        </section>
+
+        <section class = "HotelMap">
+            <div>
+                <a>지도 보기</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7916386647707!2d127.10042931105954!3d37.51283217193596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca50ac1c8bccb%3A0xbeb4a183daa6684f!2z7Iuc6re464uI7JeYIOyEnOyauA!5e0!3m2!1sko!2skr!4v1712846729203!5m2!1sko!2skr" 
+                width="450px" height="130px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div>
+                <a>지도 보기</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.9702455098495!2d126.95840187550264!3d37.53219867204746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca204cff0f11f%3A0xcf2ee9c89b81161a!2sGrand%20Mercure%20Ambassador%20Hotel%20and%20Residences%20Seoul%20Yongsan!5e0!3m2!1sko!2skr!4v1712846855432!5m2!1sko!2skr" 
+                width="450px" height="130px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div>
+                <a>지도 보기</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.269079097498!2d126.92649707550231!3d37.52515387204937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9fddeb4ec305%3A0xdce3954e5c8847de!2z7Y6Y7Ja066qs7Yq4IOyVsOuwsOyEnOuNlCDshJzsmrg!5e0!3m2!1sko!2skr!4v1712846895848!5m2!1sko!2skr"
+                width="450px" height="130px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div>
+                <a>지도 보기</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.7868906011863!2d126.97962919999999!3d37.5600844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3a5299904a3%3A0x5d13b7ed8c143eef!2z66CI7Iqk7LyA7J207ZSEIO2YuO2FlA!5e0!3m2!1sko!2skr!4v1712846960982!5m2!1sko!2skr" 
+                width="450px" height="130px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div>
+                <a>지도 보기</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2037556578966!2d127.00053650000001!3d37.550263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca300927b2e07%3A0xae4981f46b905085!2z7ISc7Jq47Yq567OE7IucIOykkeq1rCDsnqXstqnri6jroZwgNjA!5e0!3m2!1sko!2skr!4v1712846376702!5m2!1sko!2skr"
+                width= "450px;" height = "130px;"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        
+    </main>
+
+
+     <footer id="footer">
+        <div id ="CustCenter">
+            고객센터<br>
+           <div> 오전9시부터 오후 3시까지</div>
+        </div>
+
+        <div id="Company">
+        회사
+        <div><a href ="#">회사 소개</a></div>
+         </div>
+
+         <div id="Service">
+        서비스
+        <div><a href="#">공지사항</a></div>        
+        <div><a href="#">자주 묻는 질문</a></div>        
+        </div>
+
+        <div id="info">
+            (주)여행을떠나요<br>
+            주소 : 서울특별시 노원구 초안산로 12길 인덕대학교 | 대표이사 : 홍윤기, 김민중, 곽명채 | <br>
+            전자주소 : audco14@naver.com<br>
+            (주)여행을떠나요는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 
+            관련한 의무와 책임은 각 판매자에게 있습니다.
+        </div>
+
+        <div id ="terms">
+        <div><a href ="#">이용약관</a></div>
+        <div><a href ="#">개인정보처리방침</a></div>     
+      </div>   
+    
+</div>
+</form>
+
+</body>
+
+</html>

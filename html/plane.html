@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+ <head>
+  <meta charset="UTF-8">
+   <link rel = "stylesheet" href="./../css/miniP.css">
+   <link rel = "stylesheet" href="./../css/common.css">
+   <script src="./../js/common.js"></script>
+  <title>항공예약</title>
+ </head>
+ 
+<body onload="logChk02()">
+ <div id = "wrapper">
+    <form action ="./planeLi.html">
+   
+    <header id ="header">
+       
+		<div class="name"><a  href ="./../index.html"><img src ="./../img/MainLogo3.png" class = "image-thumbnail"></a></div>
+        <div class ="menubar">
+            <ul id="nav">
+                <li><a href="./hotel.html">호텔 예약</a></li>
+				<li><a href="./plane.html">항공 예약</a></li>
+				<li><a href="./reco.html">오늘의 추천</a></li>   
+				<li><a href="./service.html">고객센터</a></li>
+            </ul>
+    </div>
+
+    <div class ="logP">
+		<div class ="login"><a href ="./log.html" id ="log" class= "line">로그인</a></div>
+        <div class="create"><input type ="button" id ="crea" value="로그아웃" onclick="outChk02()"></div>
+    </div>
+    </header>
+    <!--========공통 상단바 html 코드=========-->
+	
+	<main id="main">
+
+    <div id ="search">
+	<br>
+	<fieldSet>	
+	<legend><h1>항공예약</h1></legend>
+		<div class = "searchArea">
+		<div class="sear1">
+        <select id="search1" >
+			<option value="InCheon"><b>인천</b></option>
+			<option value="Busan">부산</option>
+			<option value="Daegu">대구</option>
+			<option value="Zejudo">제주도</option>
+			<option value="Galung">강릉</option>
+		 </select></div>
+		 
+		<div class="sear2"><input type ="date"  class ="search"></div>
+		<div class="sear3"><input type ="textfield"  class ="search" placeholder="인원수를 입력하세요!"></div>
+        <div class="sear4"><input type ="submit" value="검색" class="searchB"></div>
+		</div>
+		</fieldSet>
+    </div>
+    
+
+	
+	<section class = "hotelRe">
+		<h2><a >국내 항공 추천 목록</a></h2>
+		<div class="con1"><a href = "./hotelLi.html"><img src="./../img/plane1.png"></a><h3>t-way</h3></div>
+		<div class="con1"><a href = "./hotelLi.html"><img src="./../img/plane2.png"></a><h3>대한항공</h3></div>
+		<div class="con1"><a href = "./hotelLi.html"><img src="./../img/plane3.png"></a><h3>제주항공</h3></div>
+		<div class="con1"><a href = "./hotelLi.html"><img src="./../img/plane4.png"></a><h3>아시아나</h3></div>
+		<div class="con1"><a href = "./hotel.html"><img src="./../img/plane5.png"></a><h3>진에어</h3></div>
+	</section>
+
+	<section class = "planeRe">
+		<h2><a>해외 항공 추천 목록</a></h2>
+		<div class="con1"><a href = "./planeLi.html"><img src="./../img/planeFo1.png"></a><h3>AIR PREMIO</h3></div>
+		<div class="con1"><a href = "./planeLi.html"><img src="./../img/planeFo2.png"></a><h3>SDA</h3></div>
+		<div class="con1"><a href = "./planeLi.html"><img src="./../img/planeFo3.png"></a><h3>BOAC</h3></div>
+		<div class="con1"><a href = "./planeLi.html"><img src="./../img/planeFo4.png"></a><h3>AIRBUS</h3></div>
+		<div class="con1"><a href = "./planeLi.html"><img src="./../img/planeFo5.png"></a><h3>PEACH</h3></div>
+	</section>
+	
+
+	<section class = "naraRe">
+		<h2><a>바로 떠나는 여행</a></h2>
+		<div class="con1"><a href = "./reco.html"><img src="./../img/recoFo1.png"></a><h3>오사카</h3></div>
+		<div class="con1"><a href = "./reco.html"><img src="./../img/recoFo2.png"></a><h3>다낭</h3></div>
+		<div class="con1"><a href = "./reco.html"><img src="./../img/recoFo3.png"></a><h3>방콕</h3></div>
+		<div class="con1"><a href = "./reco.html"><img src="./../img/recoFo4.png"></a><h3>싱가포르</h3></div>
+		<div class="con1"><a href = "./reco.html"><img src="./../img/recoFo5.png"></a><h3>베트남</h3></div>
+	</section>
+	</main>
+
+	
+
+
+	<footer id="footer">
+		<div id ="CustCenter">
+			고객센터<br>
+		   <div> 오전9시부터 오후 3시까지</div>
+		</div>
+
+		<div id="Company">
+		회사
+		<div><a href ="#">회사 소개</a></div>
+		 </div>
+
+		 <div id="Service">
+		서비스
+		<div><a href="#">공지사항</a></div>        
+		<div><a href="#">자주 묻는 질문</a></div>        
+		</div>
+
+		<div id="info">
+			(주)여행을떠나요<br>
+			주소 : 서울특별시 노원구 초안산로 12길 인덕대학교 | 대표이사 : 홍윤기, 김민중, 곽명채 | <br>
+			전자주소 : audco14@naver.com<br>
+			(주)여행을떠나요는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 
+			관련한 의무와 책임은 각 판매자에게 있습니다.
+		</div>
+
+		<div id ="terms">
+		<div><a href ="#">이용약관</a></div>
+		<div><a href ="#">개인정보처리방침</a></div>     
+	  </div>   
+	</footer>
+
+</form>
+</div>
+
+
+</body>
+</html>
